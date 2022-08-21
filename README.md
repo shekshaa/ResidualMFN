@@ -1,1 +1,0 @@
-# Residual Multiplicative Filter Network
