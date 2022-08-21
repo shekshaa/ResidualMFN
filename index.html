@@ -1,10 +1,230 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en">
     <head>
-     <meta charset="UTF-8" />
-     <meta http-equiv="refresh" content="1; URL=https://shekshaa.github.io/" />
-   </head>
-   <body>
-     <p>Will be redirected, otherwise click <a href="https://shekshaa.github.io/">here</a>.</p>
-   </body>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+                               integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Multishot</title>
+    </head>
+    <body class="container" style="max-width:920px">
+        <!-- Title -->
+        <div>
+            <div class='row mt-5 mb-5'>
+                <div class='col text-center'>
+                    <p class="h3 font-weight-normal">Residual Multiplicative Filter Networks for Multiscale Reconstruction</p>
+                    <span style="font-size:15px">Under Review</span>
+                </div>
+            </div>            
+            
+            <!-- authors -->
+            <div class='col text-center h6 font-weight mb-3'>
+            <a href="https://shekshaa.github.io/">Shayan Shekarforoush</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp; 
+            <a href="https://davidlindell.com/">David Lindell</a><sup>1</sup>&nbsp;&nbsp;&nbsp; 
+            <a href="http://www.cs.toronto.edu/~fleet/">David Fleet</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp; 
+            <a href="https://mbrubake.github.io/">Marcus Brubaker</a><sup>1,2,3</sup>&nbsp;&nbsp;&nbsp; 
+            </div>
+
+            <!-- affiliations -->
+            <div class='col text-center mt-1 mb-1' >
+            <sup>1</sup>University of Toronto &nbsp;&nbsp;&nbsp; 
+            <sup>2</sup>Vector Institute &nbsp;&nbsp;&nbsp; 
+            <sup>3</sup>York University
+            </div>
+
+            <div class='row text-center'>
+              <div>
+                  <img src="images/teaser.png" alt="teaser">
+              </div>
+            </div>
+              
+      </div>
+
+        </br>
+
+        <div class='row text-center'>
+                <div class='row'>
+                  <p class="h4"> Abstract</p>
+                </div>
+                <div class='row'>
+                    <p class="text-left">
+                      Coordinate networks like Multiplicative Filter Networks (MFNs) and BACON offer
+                      some control over the frequency spectrum used to represent continuous signals
+                      such as images or 3D volumes. Yet, they are not readily applicable to problems for
+                      which coarse-to-fine estimation is required, including various inverse problems in
+                      which coarse-to-fine optimization plays a key role in avoiding poor local minima.
+                      We introduce a new coordinate network architecture and training scheme that
+                      enables coarse-to-fine optimization with fine-grained control over the frequency
+                      support of learned reconstructions. This is achieved with two key innovations.
+                      First, we incorporate skip connections so that structure at one scale is preserved
+                      when fitting finer-scale structure. Second, we propose a novel initialization scheme
+                      to provide control over the model frequency spectrum at each stage of optimization.
+                      We demonstrate how these modifications enable multiscale optimization for coarseto-fine fitting to natural images. We then evaluate our model on synthetically
+                      generated datasets for the the problem of single-particle cryo-EM reconstruction.
+                      We learn high resolution multiscale structures, on par with the state-of-the art.
+                </div>
+        </div>
+        </div>
+
+        <!-- Paper section -->
+        <!-- <div>
+            <hr>
+            <div class='row'>
+                <div class='col-md-3 col-sm-3 col-xs-12 text-center col-sm-3'>
+                    <div class="row mt-4">
+                        <a href="https://arxiv.org/pdf/2012.09843.pdf" style="max-width:200px; margin-left:auto; margin-right:auto">
+                            <img src="files/paper.png" alt="paper-snapshot" class="img-thumbnail" width="80%" style="box-shadow: 10px 10px 5px grey;">
+                        </a>
+                    </div>
+                    </div>
+                    <div class='col-md-9 col-sm-9 col-xs-12 '>
+                      <p class='h2'>Paper</p>
+                      <p class='h5 font-weight-bold '> Human Mesh Recovery from Multiple Shots</p>
+                      <p class='h5'> Georgios Pavlakos, Jitendra Malik, Angjoo Kanazawa</p>
+                      <p class='h5'> CVPR 2022</p>
+                      <a class="h5" href="https://arxiv.org/pdf/2012.09843.pdf" style="margin-right:10px">
+                        <span>[pdf]</span>
+                      </a>
+                      <a class="h5" href="files/pavlakos2022multishot.bib" target="margin-right:10px">
+                        <span>[bibtex]</span>
+                      </a>
+                      <a class="h5" href="https://github.com/geopavlakos/multishot" style="_blank">
+                        <span>[Code and Data]</span>
+                      </a>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div>
+            <hr>
+
+            <div class='row text-center'>
+                <div class='col'>
+                    <p class='h2 mr-3'>Bibtex</p>
+                </div>
+            </div>
+
+                     <textarea id="bibtex" class="form-control" rows="6" cols="50" readonly>
+@inproceedings{pavlakos2022multishot,
+    title = {Human Mesh Recovery from Multiple Shots},
+    author = {Pavlakos, Georgios and Malik, Jitendra and Kanazawa, Angjoo},
+    booktitle={CVPR},
+    year = {2022}
+}</textarea>
+
+        </div> -->
+    
+        <!-- <div>
+            <hr>
+
+            <div class='row text-center'>
+                <div class='col'>
+                    <p class='h2 mr-3'>Video</p>
+                </div>
+            </div>
+
+
+            <div class='row mt-3 text-center center-block' style=" margin-left:auto; margin-right:auto; max-width:560px">
+                <div class='col ml-1 mr-1' style="position: relative; width: 100%;height: 0;padding-bottom: 56%;">
+            <iframe width="558" height="314" src="https://www.youtube.com/embed/Qq8N3tH8Id0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </iframe>
+                </div>
+            </div>
+
+        </div> -->
+
+        <!-- Results, transformation -->
+        <!-- <div>
+            <hr>
+            <div class='row text-center'>
+                <div class='col'>
+                    <p class='h2'>Overview</p>
+                    <p class="text-left">
+            We propose a multi-shot optimization method that allows us to reconstruct humans across shot changes. We apply this optimization step offline to build a large dataset of pseudo ground truth 3D human sequences from movies. Then, we use the collected data, to train computational models that can directly recover the human mesh from a single image, or from a video sequence that can include shot changes.
+                </div>
+            </div>
+            <div class='row'>
+                <div>
+                    <img width=100% src="files/overview.png"/>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Architecture, explaination -->
+        <!-- <div>
+            <hr>
+            <div class='row text-center'>
+                <div class='col'>
+                    <p class='h2'>Samples from Multi-Shot AVA</p>
+                </div>
+
+            <div class='row mt-3'>
+            <div class='col-md-6 col-sm-6 col-xs-12 align-middle mt-4'>
+                <video width=100% src="files/msava1.mp4", type="video/m4v" autoplay muted loop/>
+            </div>
+            <div class='col-md-6 col-sm-6 col-xs-12 align-middle mt-4'>
+                <video width=100% src="files/msava2.mp4", type="video/m4v" autoplay muted loop/>
+            </div>
+            </div>
+
+            <div class='row mt-3'>
+            <div class='col-md-6 col-sm-6 col-xs-12 align-middle mt-4'>
+                <video width=100% src="files/msava3.mp4", type="video/m4v" autoplay muted loop/>
+            </div>
+            <div class='col-md-6 col-sm-6 col-xs-12 align-middle mt-4'>
+                <video width=100% src="files/msava4.mp4", type="video/m4v" autoplay muted loop/>
+            </div>
+            </div>
+
+            </div>
+
+
+
+        </div> -->
+
+
+        <!-- Architecture, explaination -->
+        <!-- <div>
+            <hr>
+            <div class='row text-center'>
+                <div class='col'>
+                    <p class='h2'>Comparison</p>
+                    <p class="text-left">
+                Many previous approaches for 3D human reconstruction were designed primarily with performance capture in mind, so they can often fail on data from edited media. Our methods are robust and successful in these scenarios as well.
+                </div>
+                <div class='row'>
+                <div>
+                    <video width=100% src="files/comparison_video.m4v", type="video/m4v" autoplay muted loop/>
+                </div>
+                <div class='row'>
+                <div>
+                    <img width=90% src="files/comparison_image.png"/>
+                </div>
+            </div>
+            </div>
+            </div>
+
+
+        </div> -->
+
+
+        <!-- Ack -->
+        <!-- <div>
+            <hr>
+
+            <div class='row mb-5 text-center'>
+                <div class='col'>
+                    <p class='h2'>Acknowledgements</p>
+            <div class='text-left'>
+            <p>This research was supported by BAIR sponsors.</p>
+            <p>We want to thank Stephen Phillips for the video voiceover. GP wants to thank Nikos Kolotouros for helpful discussions.</p>
+            <p>The design of this project page was based on <a href="https://www.guandaoyang.com/PointFlow/">this</a> website.
+            </div>
+                </div>
+            </div>
+        </div> -->
+    </body>
 </html>
