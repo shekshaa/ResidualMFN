@@ -1,0 +1,6 @@
+@article{shekarforoush2022residual,
+  title={Residual Multiplicative Filter Networks for Multiscale Reconstruction},
+  author={Shekarforoush, Shayan and Lindell, David B and Fleet, David J and Brubaker, Marcus A},
+  journal={arXiv preprint arXiv:2206.00746},
+  year={2022}
+}

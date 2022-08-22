@@ -8,28 +8,27 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
                                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <title>Multishot</title>
+        <title>Residual MFN</title>
     </head>
     <body class="container" style="max-width:920px">
         <!-- Title -->
         <div>
             <div class='row mt-5 mb-5'>
                 <div class='col text-center'>
-                    <p class="h3 font-weight-normal">Residual Multiplicative Filter Networks for Multiscale Reconstruction</p>
-                    <span style="font-size:15px">Under Review</span>
+                    <p class="h3 font-weight-bold">Residual Multiplicative Filter Networks for Multiscale Reconstruction</p>
+                    <span style="font-size:17px">Under Review</span>
                 </div>
             </div>            
-            
             <!-- authors -->
-            <div class='col text-center h6 font-weight mb-3'>
-            <a href="https://shekshaa.github.io/">Shayan Shekarforoush</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp; 
-            <a href="https://davidlindell.com/">David Lindell</a><sup>1</sup>&nbsp;&nbsp;&nbsp; 
-            <a href="http://www.cs.toronto.edu/~fleet/">David Fleet</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp; 
-            <a href="https://mbrubake.github.io/">Marcus Brubaker</a><sup>1,2,3</sup>&nbsp;&nbsp;&nbsp; 
+            <div class='col text-center h5 font-weight mb-3'>
+            <a href="https://shekshaa.github.io/">Shayan Shekarforoush</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://davidlindell.com/">David Lindell</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="http://www.cs.toronto.edu/~fleet/">David Fleet</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            <a href="https://mbrubake.github.io/">Marcus Brubaker</a><sup>1,2,3</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
 
             <!-- affiliations -->
-            <div class='col text-center mt-1 mb-1' >
+            <div class='col text-center mt-4 mb-4' >
             <sup>1</sup>University of Toronto &nbsp;&nbsp;&nbsp; 
             <sup>2</sup>Vector Institute &nbsp;&nbsp;&nbsp; 
             <sup>3</sup>York University
@@ -37,194 +36,179 @@
 
             <div class='row text-center'>
               <div>
-                  <img src="images/teaser.png" alt="teaser">
+                  <img width="80%" src="images/teaser.png" alt="teaser">
               </div>
             </div>
               
       </div>
 
-        </br>
-
-        <div class='row text-center'>
-                <div class='row'>
-                  <p class="h4"> Abstract</p>
+      <div>
+        <hr>
+        <div class="row">
+            <div class="col-md-3 col-sm-3 col-xs-12 text-center">
+                <div class="row mt-4">
+                    <a href="https://arxiv.org/abs/2206.00746" style="max-width:200px; margin-left:auto; margin-right:auto">
+                        <img src="images/paper_snapshot.png" alt="paper-snapshot" class="img-thumbnail" width="80%" style="box-shadow: 10px 10px 5px grey;">
+                    </a>
                 </div>
-                <div class='row'>
-                    <p class="text-left">
-                      Coordinate networks like Multiplicative Filter Networks (MFNs) and BACON offer
-                      some control over the frequency spectrum used to represent continuous signals
-                      such as images or 3D volumes. Yet, they are not readily applicable to problems for
-                      which coarse-to-fine estimation is required, including various inverse problems in
-                      which coarse-to-fine optimization plays a key role in avoiding poor local minima.
-                      We introduce a new coordinate network architecture and training scheme that
-                      enables coarse-to-fine optimization with fine-grained control over the frequency
-                      support of learned reconstructions. This is achieved with two key innovations.
-                      First, we incorporate skip connections so that structure at one scale is preserved
-                      when fitting finer-scale structure. Second, we propose a novel initialization scheme
-                      to provide control over the model frequency spectrum at each stage of optimization.
-                      We demonstrate how these modifications enable multiscale optimization for coarseto-fine fitting to natural images. We then evaluate our model on synthetically
-                      generated datasets for the the problem of single-particle cryo-EM reconstruction.
-                      We learn high resolution multiscale structures, on par with the state-of-the art.
-                </div>
-        </div>
-        </div>
-
-        <!-- Paper section -->
-        <!-- <div>
-            <hr>
-            <div class='row'>
-                <div class='col-md-3 col-sm-3 col-xs-12 text-center col-sm-3'>
-                    <div class="row mt-4">
-                        <a href="https://arxiv.org/pdf/2012.09843.pdf" style="max-width:200px; margin-left:auto; margin-right:auto">
-                            <img src="files/paper.png" alt="paper-snapshot" class="img-thumbnail" width="80%" style="box-shadow: 10px 10px 5px grey;">
+                <div class="row mt-4">
+                    <div class="col">
+                        <a class="h5" href="https://arxiv.org/abs/2206.00746" style="margin-right:10px">
+                            <span>[ArXiv]</span>
                         </a>
+                        <a class="h5" href="https://github.com/shekshaa/ResidualMFN" style="margin-right:10px">
+                            <span>[Code]</span>
+                        </a>
+                        <a class="h5" href="bibtex.txt"> [Bibtex] </a>
                     </div>
-                    </div>
-                    <div class='col-md-9 col-sm-9 col-xs-12 '>
-                      <p class='h2'>Paper</p>
-                      <p class='h5 font-weight-bold '> Human Mesh Recovery from Multiple Shots</p>
-                      <p class='h5'> Georgios Pavlakos, Jitendra Malik, Angjoo Kanazawa</p>
-                      <p class='h5'> CVPR 2022</p>
-                      <a class="h5" href="https://arxiv.org/pdf/2012.09843.pdf" style="margin-right:10px">
-                        <span>[pdf]</span>
-                      </a>
-                      <a class="h5" href="files/pavlakos2022multishot.bib" target="margin-right:10px">
-                        <span>[bibtex]</span>
-                      </a>
-                      <a class="h5" href="https://github.com/geopavlakos/multishot" style="_blank">
-                        <span>[Code and Data]</span>
-                      </a>
                 </div>
             </div>
-        </div> -->
-
-        <!-- <div>
-            <hr>
-
-            <div class='row text-center'>
-                <div class='col'>
-                    <p class='h2 mr-3'>Bibtex</p>
-                </div>
+            <div class="col-md-9 col-sm-9 col-xs-12">
+                <p class="h4 font-weight-bold ">Abstract</p>
+                <p style="line-height:1.4;">
+                  Coordinate networks like Multiplicative Filter Networks (MFNs) and BACON offer
+                  some control over the frequency spectrum used to represent continuous signals
+                  such as images or 3D volumes. Yet, they are not readily applicable to problems for
+                  which coarse-to-fine estimation is required, including various inverse problems in
+                  which coarse-to-fine optimization plays a key role in avoiding poor local minima.
+                  We introduce a new coordinate network architecture and training scheme that
+                  enables coarse-to-fine optimization with fine-grained control over the frequency
+                  support of learned reconstructions. This is achieved with two key innovations.
+                  First, we incorporate skip connections so that structure at one scale is preserved
+                  when fitting finer-scale structure. Second, we propose a novel initialization scheme
+                  to provide control over the model frequency spectrum at each stage of optimization.
+                  We demonstrate how these modifications enable multiscale optimization for coarseto-fine fitting to natural images. We then evaluate our model on synthetically
+                  generated datasets for the the problem of single-particle cryo-EM reconstruction.
+                  We learn high resolution multiscale structures, on par with the state-of-the art.
+                </p>
             </div>
-
-                     <textarea id="bibtex" class="form-control" rows="6" cols="50" readonly>
-@inproceedings{pavlakos2022multishot,
-    title = {Human Mesh Recovery from Multiple Shots},
-    author = {Pavlakos, Georgios and Malik, Jitendra and Kanazawa, Angjoo},
-    booktitle={CVPR},
-    year = {2022}
-}</textarea>
-
-        </div> -->
+        </div>
+    </div>
+    <div>
+      <hr>
+      <div class="row text-center">
+        <div class="col">
+            <p class="h2">Motivating 2D Example</p>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col">
+          <p class="text-break">
+            When employing a coarse-to-fine training strategy to train a BACON, 
+            namely outputs at each scale is optimized in separate rounds of optimization, 
+            the network completely forgets the learned representations of
+            coarse scale outputs from previous optimization rounds. 
+            In fact, reconstructions at different scales are highly coupled, 
+            since new layers can establish new frequencies anywhere within the band limit. 
+            We modify the architecture by adding <b>skip connections</b> and 
+            propose a new <b>the initialization scheme</b> to make such coordinate network 
+            amenable to coarse-to-fine multiscale reconstruction scenarios.
+          </p>
+      </div>
+      <div class="row text-center">
+        <div class="col">
+          <img src="images/image_fitting.png" width="80%" alt="image fitting">
+        </div>
+      </div>
+    </div>  
+  </div>
+    <div>
+      <hr>
+      <div class="row text-center">
+        <div class="col">
+            <p class="h2">Cryo-EM</p>
+        </div>
+      </div>
+      <div class="row mt-1">
+        <div class="col-md-6 col-sm-6 col-xs-12 mt-3">
+          <p class="text-break">
+          <b>3D Reconstruction.</b> Single particle cryo-EM is an increasingly popular experimental technique to recover 
+          the 3D structure of macromolecular complexes, such as proteins. 
+          This has enabled atomic or near-atomic resolution reconstruction of challenging structures. 
+          Multiscale, coarse-to-fine reconstructions has long played a critical role in cryo-EM estimation, 
+          making it an ideal testbed for our proposed methods.
+          <br>
+          <br>
+          <b>Coarse-to-fine.</b> In practice, naively optimizing for both the poses and potential map 
+          suffers from <b>poor local minima</b> due to high frequency noise.
+          To avoid this, we start from estimating low frequency content of the map as it has higher SNR. 
+          This allows for reliable initial pose estimation. We then further refine to
+          higher frequency content which allows for more accurate pose estimation.
+          Previous approaches employ variants of this technique, called <i>Frequency Marching</i>. 
+          <br>
+          <br>
+          <b> Results.</b> We evaluate our proposal on two synthetic datasets obtained from PDB1ol5 and PDB4ake. 
+          From low to high scales, increasingly more structural features are resolved. 
+          The low-scale reconstructions capture only the global and low-resolution features, 
+          whereas the full-scale ones contain fine-grained details. 
+        </p>
+      </div>
+          
+      <div class="col-md-6 col-sm-6 col-xs-12 mt-3">
+          <img src="images/pdb1ol5_all_scales.gif" class="img-fluid" alt="pdb1ol5_all">
+          <img src="images/pdb4ake_all_scales.gif" class="img-fluid" alt="pdb4ke_all">
+      </div>
+    </div>
+    <div class="row mt-1">
+      <div class="col-md-4 col-sm-4 col-xs-12 mt-1">
+        <img src="images/pdb1ol5_evolution.gif" class="img-fluid" alt="pdb1ol5_evo">
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 mt-1">
+        <img src="images/pdb4ake_evolution.gif" class="img-fluid" alt="pdb4ke_evo">
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 mt-1">
+        <p class="text-break">
+          <b>Evolution.</b> The coarse-to-fine evolution 
+          of the reconstructed structure for each dataset during training.
+          We first start from a random structure, and then obtain a coarse reconstruction 
+          which will be further refined to fine-grained details at later stages (i.e. high-resolution).
+        </p>
+      </div>
+    </div>
+    <div class="row mt-3">
+      <div class="col-md-8 col-sm-8 col-xs-12 mt-3">
+        <video width="80%" src="images/model_fit2.mp4" ,="" type="vid" autoplay="" muted="" loop=""></video>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 mt-3">
+        <p class="text-break">
+          <b>Model Fitting.</b> We also use Chimera to fit the available atomic model 
+          of pdb4ake into the corresponding final reconstruction. 
+          As shown in video model_fit.mp4, various secondary structures, such as α-helices,
+          are well aligned with the reconstructed 3D density map.
+        </p>
+      </div>
+      </div>
+  </div>
     
-        <!-- <div>
-            <hr>
 
-            <div class='row text-center'>
-                <div class='col'>
-                    <p class='h2 mr-3'>Video</p>
-                </div>
+    <!-- <div>
+        <hr>
+        <div class='row text-center'>
+            <div class='col'>
+                <p class='h2 mr-3'>Bibtex</p>
             </div>
-
-
-            <div class='row mt-3 text-center center-block' style=" margin-left:auto; margin-right:auto; max-width:560px">
-                <div class='col ml-1 mr-1' style="position: relative; width: 100%;height: 0;padding-bottom: 56%;">
-            <iframe width="558" height="314" src="https://www.youtube.com/embed/Qq8N3tH8Id0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </iframe>
-                </div>
-            </div>
-
-        </div> -->
-
-        <!-- Results, transformation -->
-        <!-- <div>
-            <hr>
-            <div class='row text-center'>
-                <div class='col'>
-                    <p class='h2'>Overview</p>
-                    <p class="text-left">
-            We propose a multi-shot optimization method that allows us to reconstruct humans across shot changes. We apply this optimization step offline to build a large dataset of pseudo ground truth 3D human sequences from movies. Then, we use the collected data, to train computational models that can directly recover the human mesh from a single image, or from a video sequence that can include shot changes.
-                </div>
-            </div>
-            <div class='row'>
-                <div>
-                    <img width=100% src="files/overview.png"/>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- Architecture, explaination -->
-        <!-- <div>
-            <hr>
-            <div class='row text-center'>
-                <div class='col'>
-                    <p class='h2'>Samples from Multi-Shot AVA</p>
-                </div>
-
-            <div class='row mt-3'>
-            <div class='col-md-6 col-sm-6 col-xs-12 align-middle mt-4'>
-                <video width=100% src="files/msava1.mp4", type="video/m4v" autoplay muted loop/>
-            </div>
-            <div class='col-md-6 col-sm-6 col-xs-12 align-middle mt-4'>
-                <video width=100% src="files/msava2.mp4", type="video/m4v" autoplay muted loop/>
-            </div>
-            </div>
-
-            <div class='row mt-3'>
-            <div class='col-md-6 col-sm-6 col-xs-12 align-middle mt-4'>
-                <video width=100% src="files/msava3.mp4", type="video/m4v" autoplay muted loop/>
-            </div>
-            <div class='col-md-6 col-sm-6 col-xs-12 align-middle mt-4'>
-                <video width=100% src="files/msava4.mp4", type="video/m4v" autoplay muted loop/>
-            </div>
-            </div>
-
-            </div>
-
-
-
-        </div> -->
-
-
-        <!-- Architecture, explaination -->
-        <!-- <div>
-            <hr>
-            <div class='row text-center'>
-                <div class='col'>
-                    <p class='h2'>Comparison</p>
-                    <p class="text-left">
-                Many previous approaches for 3D human reconstruction were designed primarily with performance capture in mind, so they can often fail on data from edited media. Our methods are robust and successful in these scenarios as well.
-                </div>
-                <div class='row'>
-                <div>
-                    <video width=100% src="files/comparison_video.m4v", type="video/m4v" autoplay muted loop/>
-                </div>
-                <div class='row'>
-                <div>
-                    <img width=90% src="files/comparison_image.png"/>
-                </div>
-            </div>
-            </div>
-            </div>
-
-
-        </div> -->
+        </div>
+        <textarea id="bibtex" class="form-control" rows="6" cols="50" readonly>
+          @article{shekarforoush2022residual,
+            title={Residual Multiplicative Filter Networks for Multiscale Reconstruction},
+            author={Shekarforoush, Shayan and Lindell, David B and Fleet, David J and Brubaker, Marcus A},
+            journal={arXiv preprint arXiv:2206.00746},
+            year={2022}
+          }</textarea>
+    </div> -->
 
 
         <!-- Ack -->
-        <!-- <div>
+        <div>
             <hr>
-
             <div class='row mb-5 text-center'>
                 <div class='col'>
-                    <p class='h2'>Acknowledgements</p>
-            <div class='text-left'>
-            <p>This research was supported by BAIR sponsors.</p>
-            <p>We want to thank Stephen Phillips for the video voiceover. GP wants to thank Nikos Kolotouros for helpful discussions.</p>
-            <p>The design of this project page was based on <a href="https://www.guandaoyang.com/PointFlow/">this</a> website.
-            </div>
+                    <!-- <p class='h2'>Acknowledgements</p> -->
+                    <div class='text-left'>
+                        <p>The design of this project page is based on <a href="https://www.guandaoyang.com/PointFlow/">this</a> website.
+                    </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </body>
 </html>
